@@ -1,9 +1,7 @@
 package Server.commands;
 
 import Server.managers.CollectionManager;
-import extra.utils.Invoker;
-
-import java.io.File;
+import Server.utils.Invoker;
 
 /**
  * Класс команды исполнения скрипта

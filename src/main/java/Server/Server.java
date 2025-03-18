@@ -4,7 +4,7 @@ import Server.managers.CollectionManager;
 import Server.managers.ServerConsoleManager;
 import Server.threads.ConsoleThread;
 import extra.utils.FileReader;
-import extra.utils.Invoker;
+import Server.utils.Invoker;
 import Server.utils.XMLDeserializer;
 
 import java.io.File;

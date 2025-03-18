@@ -1,4 +1,4 @@
-package extra.utils;
+package Server.utils;
 
 import extra.collectionElements.Coordinates;
 import extra.collectionElements.FuelType;
@@ -8,6 +8,7 @@ import extra.exceptions.CommandTokenException;
 import extra.exceptions.ExecutionException;
 import extra.exceptions.ScriptExecutionException;
 import extra.exceptions.WrongDataException;
+import extra.utils.FileWriter;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -37,7 +38,7 @@ public class ScriptExecutor {
     public String executeScript(String script) throws ScriptExecutionException {
         Scanner scanner = null;
         String msg = "";
-        System.out.println(script);
+        //System.out.println(script);
         File file = new File("src/main/java/Server/files/execution.txt");
         FileWriter.writeIntoFile(file, script);
         try {

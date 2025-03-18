@@ -1,7 +1,7 @@
 package Server.commands;
 
 import Server.managers.CollectionManager;
-import extra.utils.Invoker;
+import Server.utils.Invoker;
 
 /**
  * Класс команды помощи
