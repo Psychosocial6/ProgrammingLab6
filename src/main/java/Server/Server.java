@@ -13,9 +13,14 @@ import java.io.FileNotFoundException;
 public class Server {
     public static void main(String[] args) {
         File inputFile = new File("src/main/java/Server/files/input.xml");
+        File savedFile = new File("src/main/java/Server/files/savedCollection.xml");
         CollectionManager collectionManager = new CollectionManager();
         try {
             collectionManager = XMLDeserializer.deserializeFromXML(FileReader.readFile(inputFile));
+            CollectionManager collectionManager1 = XMLDeserializer.deserializeFromXML(FileReader.readFile(savedFile));
+            if (!collectionManager1.getCollection().isEmpty()) {
+                collectionManager = collectionManager1;
+            }
         } catch (FileNotFoundException e) {
             System.out.println(e.getMessage());
         }

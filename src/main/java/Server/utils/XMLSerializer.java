@@ -23,10 +23,7 @@ public class XMLSerializer {
      */
     public static String serializeToXML(CollectionManager collectionManager) {
         XmlMapper xmlMapper = new XmlMapper();
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("HH:mm:ss dd.MM.yyyy");
-        JavaTimeModule module = new JavaTimeModule();
-        module.addSerializer(ZonedDateTime.class, new ZonedDateTimeSerializer(formatter));
-        xmlMapper.registerModule(module);
+        xmlMapper.registerModule(new JavaTimeModule());
         xmlMapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
         String xml = "";
 

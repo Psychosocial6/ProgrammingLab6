@@ -25,17 +25,26 @@ public class ServerConsoleManager {
                 input = scanner.nextLine().split("\s+");
                 String commandToken = input[0];
 
+                Object[] args;
                 switch (commandToken) {
                     case "exit":
-                        Object[] args = {"src/main/java/Server/files/savedCollection.xml"};
+                        args = new Object[]{"src/main/java/Server/files/savedCollection.xml"};
                         try {
                             invoker.executeCommandUsingToken("save", args);
+                            System.out.println("Saved successfully");
                         } catch (ExecutionException e) {
                             e.printStackTrace();
                         }
                         System.exit(0);
                         break;
-
+                    case "save":
+                        args = new Object[]{"src/main/java/Server/files/savedCollection.xml"};
+                        try {
+                            invoker.executeCommandUsingToken("save", args);
+                            System.out.println("Saved successfully");
+                        } catch (ExecutionException e) {
+                            e.printStackTrace();
+                        }
                 }
             }
         }
