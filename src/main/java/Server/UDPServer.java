@@ -4,8 +4,8 @@ import Client.requests.Request;
 import Server.responses.Response;
 import extra.exceptions.ExecutionException;
 import extra.utils.Invoker;
-import extra.utils.RequestDeserializer;
-import extra.utils.ResponseSerializer;
+import Server.utils.RequestDeserializer;
+import Server.utils.ResponseSerializer;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,4 +1,4 @@
-package extra.utils;
+package Server.utils;
 
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 import Server.managers.CollectionManager;

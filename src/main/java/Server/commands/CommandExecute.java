@@ -28,7 +28,7 @@ public class CommandExecute extends Command {
      * */
     @Override
     public String execute(Object[] args) {
-        File file = new File((String) args[0]);
+        String file = (String) args[0];
         return collectionManager.executeScript(file, invoker);
     }
 

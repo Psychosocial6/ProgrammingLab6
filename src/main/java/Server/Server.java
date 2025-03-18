@@ -5,7 +5,7 @@ import Server.managers.ServerConsoleManager;
 import Server.threads.ConsoleThread;
 import extra.utils.FileReader;
 import extra.utils.Invoker;
-import extra.utils.XMLDeserializer;
+import Server.utils.XMLDeserializer;
 
 import java.io.File;
 import java.io.FileNotFoundException;

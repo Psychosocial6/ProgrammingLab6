@@ -6,10 +6,15 @@ import Server.responses.Response;
 import extra.collectionElements.Vehicle;
 import Server.commands.Command;
 import extra.exceptions.ExecutionException;
+import extra.utils.FileReader;
 import extra.utils.Invoker;
 import extra.utils.VehicleReader;
 
 import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Scanner;
 
 /**
@@ -71,8 +76,14 @@ public class ConsoleManager {
                         }
 
                         if (commandToken.equals("execute_script")) {
-                            File file = new File((String) args[1]);
-
+                            File file = new File(input[1]);
+                            String data = "";
+                            try {
+                                data = FileReader.readFile(file);
+                            } catch (FileNotFoundException e) {
+                                e.printStackTrace();
+                            }
+                            args[0] = data;
                         }
 
                         Request request = requestManager.getRequest(commandToken);

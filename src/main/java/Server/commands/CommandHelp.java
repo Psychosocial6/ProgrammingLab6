@@ -1,6 +1,7 @@
 package Server.commands;
 
 import Server.managers.CollectionManager;
+import extra.utils.Invoker;
 
 /**
  * Класс команды помощи
@@ -8,12 +9,14 @@ import Server.managers.CollectionManager;
  * */
 public class CommandHelp extends Command{
 
+    private Invoker invoker;
     /**
      * Конструктор
-     * @param collectionManager - класс управляющий коллекцией
+     * @param invoker - класс управляющий командами
      * */
-    public CommandHelp(CollectionManager collectionManager) {
+    public CommandHelp(CollectionManager collectionManager, Invoker invoker) {
         super(collectionManager, 0);
+        this.invoker = invoker;
     }
 
     /**
@@ -23,7 +26,7 @@ public class CommandHelp extends Command{
     @Override
     public String execute(Object[] args) {
         String msg = "";
-        for (Object command: args) {
+        for (Object command: invoker.getCommands().values()) {
             msg += ((Command) command).getInfo() + "\n";
         }
         return msg;

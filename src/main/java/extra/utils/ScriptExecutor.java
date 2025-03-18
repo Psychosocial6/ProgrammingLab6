@@ -34,9 +34,12 @@ public class ScriptExecutor {
      * @param file - файл со скриптом
      * @throws ScriptExecutionException - исключение при ошибке исполнения скрипта
      */
-    public String executeScript(File file) throws ScriptExecutionException {
+    public String executeScript(String script) throws ScriptExecutionException {
         Scanner scanner = null;
         String msg = "";
+        System.out.println(script);
+        File file = new File("src/main/java/Server/files/execution.txt");
+        FileWriter.writeIntoFile(file, script);
         try {
             scanner = new Scanner(file);
         } catch (FileNotFoundException e) {

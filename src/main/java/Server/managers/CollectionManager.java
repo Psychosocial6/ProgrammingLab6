@@ -7,13 +7,15 @@ import extra.exceptions.ScriptExecutionException;
 import extra.utils.FileWriter;
 import extra.utils.Invoker;
 import extra.utils.ScriptExecutor;
-import extra.utils.XMLSerializer;
+import Server.utils.XMLSerializer;
 
 import java.io.File;
 import java.time.ZonedDateTime;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Hashtable;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 /**
  * Класс управляющий коллекцией
@@ -56,10 +58,11 @@ public class CollectionManager {
         if (collection.isEmpty()) {
             return "Collection is empty";
         }
-        String ret = "----------\n";
-        for (String key : collection.keySet()) {
-            ret += String.format("%s : %s\n ----------\n", key, collection.get(key));
-        }
+        String ret = collection.entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue())
+                .map(entry -> entry.getKey() + ": " + entry.getValue())
+                .collect(Collectors.joining("\n"));
         return ret;
     }
 
@@ -120,7 +123,7 @@ public class CollectionManager {
      * @param file - файл со скриптом
      * @param invoker - исполнитель команд
      */
-    public String executeScript(File file, Invoker invoker) {
+    public String executeScript(String file, Invoker invoker) {
         String msg = "";
         ScriptExecutor executor = new ScriptExecutor(invoker);
         try {

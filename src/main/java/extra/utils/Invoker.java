@@ -20,7 +20,7 @@ public class Invoker {
      * @param collectionManager - управляемая коллекция
      */
     public Invoker(CollectionManager collectionManager) {
-        commands.put("help", new CommandHelp(collectionManager));
+        commands.put("help", new CommandHelp(collectionManager, this));
         commands.put("info", new CommandInfo(collectionManager));
         commands.put("show", new CommandShow(collectionManager));
         commands.put("insert", new CommandInsert(collectionManager));
