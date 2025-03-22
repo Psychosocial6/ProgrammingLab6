@@ -2,14 +2,17 @@ package Server;
 
 import Client.requests.Request;
 import Server.responses.Response;
+import extra.collectionElements.Vehicle;
 import extra.exceptions.ExecutionException;
 import Server.utils.Invoker;
 import Server.utils.RequestDeserializer;
 import Server.utils.ResponseSerializer;
+import extra.utils.IDGenerator;
 
 import java.io.File;
 import java.io.IOException;
 import java.net.*;
+import java.time.ZonedDateTime;
 import java.util.Arrays;
 
 public class UDPServer {
@@ -53,6 +56,14 @@ public class UDPServer {
         }
         byte[] message = Arrays.copyOfRange(datagramPacket.getData(),0, datagramPacket.getLength());
         Request request = RequestDeserializer.deserializeRequest(message);
+        if (request.requiresVehicle()) {
+            Object[] args = request.getArgs();
+            Vehicle vehicle = (Vehicle) args[args.length - 1];
+            vehicle.setId((long) IDGenerator.getNewID());
+            vehicle.setCreationDate(ZonedDateTime.now());
+            args[args.length - 1] = vehicle;
+            request.setArgs(args);
+        }
         String result = "";
         String error = "";
         try {
