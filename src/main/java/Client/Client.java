@@ -3,7 +3,7 @@ package Client;
 import Client.requests.Request;
 import Client.utils.RequestSerializer;
 import Client.utils.ResponseDeserializer;
-import Server.responses.Response;
+import Client.responses.Response;
 
 import java.io.IOException;
 import java.net.*;

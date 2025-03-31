@@ -1,17 +1,17 @@
-package extra.exceptions;
+package Client.exceptions;
 
 /**
- * Класс-исключение для неверных данных
+ * Класс-исключение для ошибки выполнения команды
  * @author Андрей
  * */
-public class WrongDataException extends Exception {
+public class ExecutionException extends Exception {
     private String message;
 
     /**
      * Конструктор
      * @param message - сообщение получаемое через getMessage()
      * */
-    public WrongDataException(String message) {
+    public ExecutionException(String message) {
         this.message = message;
     }
 

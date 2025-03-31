@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 public class PrintFieldAscendingDistanceTravelledRequest extends Request {
     public PrintFieldAscendingDistanceTravelledRequest(Object[] args) {
         super("print_field_ascending_distance_travelled", args, 0, false);

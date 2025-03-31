@@ -2,10 +2,11 @@ package Client.managers;
 
 import Client.Client;
 import Client.requests.Request;
-import Server.responses.Response;
-import extra.collectionElements.Vehicle;
-import extra.utils.FileReader;
-import extra.utils.VehicleReader;
+import Client.utils.FileReader;
+import Client.utils.VehicleReader;
+import Client.collectionElements.Vehicle;
+import Client.responses.Response;
+
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -16,7 +16,7 @@ public class CommandExecute extends Command {
      * @param invoker - класс управляющий командами
      * */
     public CommandExecute(CollectionManager collectionManager, Invoker invoker) {
-        super(collectionManager, 1);
+        super(collectionManager);
         this.invoker = invoker;
     }
 

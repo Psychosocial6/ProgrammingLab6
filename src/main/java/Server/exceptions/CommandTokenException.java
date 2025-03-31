@@ -1,4 +1,4 @@
-package extra.exceptions;
+package Server.exceptions;
 
 /**
  * Класс-исключение для неверного названия команды

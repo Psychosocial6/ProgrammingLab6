@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 public class HelpRequest extends Request {
 
     public HelpRequest(Object[] args) {

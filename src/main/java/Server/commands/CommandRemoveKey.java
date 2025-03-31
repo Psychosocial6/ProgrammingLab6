@@ -13,7 +13,7 @@ public class CommandRemoveKey extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandRemoveKey(CollectionManager collectionManager) {
-        super(collectionManager, 1);
+        super(collectionManager);
     }
 
     /**

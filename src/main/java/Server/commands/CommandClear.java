@@ -13,7 +13,7 @@ public class CommandClear extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandClear(CollectionManager collectionManager) {
-        super(collectionManager, 0);
+        super(collectionManager);
     }
 
     /**

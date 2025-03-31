@@ -1,7 +1,7 @@
-package extra.collectionElements;
+package Client.collectionElements;
 
+import Client.exceptions.WrongDataException;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import extra.exceptions.WrongDataException;
 
 /**
  * Класс для хранения координат транспортного средства

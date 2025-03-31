@@ -1,6 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
 
 public class FilterContainsNameRequest extends Request {
     public FilterContainsNameRequest(Object[] args) {

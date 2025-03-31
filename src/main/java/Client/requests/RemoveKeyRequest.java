@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 public class RemoveKeyRequest extends Request {
     public RemoveKeyRequest(Object[] args) {
         super("remove_key", args, 0, false);

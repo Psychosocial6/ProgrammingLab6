@@ -1,6 +1,6 @@
-package extra.interfaces;
+package Server.interfaces;
 
-import extra.exceptions.WrongDataException;
+import Server.exceptions.WrongDataException;
 
 /**
  * Интерфейс для валидации введенных полей

@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 import java.io.Serializable;
 import java.util.Arrays;
 

@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 public class ClearRequest extends Request {
 
     public ClearRequest(Object[] args) {

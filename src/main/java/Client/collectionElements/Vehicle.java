@@ -1,9 +1,8 @@
-package extra.collectionElements;
+package Client.collectionElements;
 
+import Client.exceptions.WrongDataException;
+import Client.utils.IDGenerator;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import extra.exceptions.WrongDataException;
-import extra.utils.IDGenerator;
-
 
 import java.time.ZonedDateTime;
 

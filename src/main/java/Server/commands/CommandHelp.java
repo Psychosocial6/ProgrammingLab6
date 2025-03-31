@@ -15,7 +15,7 @@ public class CommandHelp extends Command{
      * @param invoker - класс управляющий командами
      * */
     public CommandHelp(CollectionManager collectionManager, Invoker invoker) {
-        super(collectionManager, 0);
+        super(collectionManager);
         this.invoker = invoker;
     }
 

@@ -11,26 +11,15 @@ public abstract class Command implements CommandInterface {
 
     protected static CollectionManager collectionManager;
     public boolean requiresVehicleObject;
-    protected int simpleArgumentsRequired;
 
     /**
      * Конструктор
      * @param collectionManager - класс, управялющий коллекцией
-     * @param simpleArgumentsRequired - количество необходимых простых аргументов
      *
      * */
-    public Command(CollectionManager collectionManager, int simpleArgumentsRequired) {
+    public Command(CollectionManager collectionManager) {
         Command.collectionManager = collectionManager;
         requiresVehicleObject = false;
-        this.simpleArgumentsRequired = simpleArgumentsRequired;
-    }
-
-    /**
-     * Метод возвращающий количество простых аргументов
-     * @return simpleArgumentsRequired
-     * */
-    public int getSimpleArgumentsRequired() {
-        return simpleArgumentsRequired;
     }
 
     /**

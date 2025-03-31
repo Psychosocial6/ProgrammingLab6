@@ -13,7 +13,7 @@ public class CommandFilterStartsWithName extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandFilterStartsWithName(CollectionManager collectionManager) {
-        super(collectionManager, 1);
+        super(collectionManager);
     }
 
     /**

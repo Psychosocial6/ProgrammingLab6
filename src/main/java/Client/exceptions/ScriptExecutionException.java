@@ -1,4 +1,4 @@
-package extra.exceptions;
+package Client.exceptions;
 
 /**
  * Класс-исключение для ошибки исполнения скрипта

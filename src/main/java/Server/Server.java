@@ -3,7 +3,7 @@ package Server;
 import Server.managers.CollectionManager;
 import Server.managers.ServerConsoleManager;
 import Server.threads.ConsoleThread;
-import extra.utils.FileReader;
+import Server.utils.FileReader;
 import Server.utils.Invoker;
 import Server.utils.XMLDeserializer;
 

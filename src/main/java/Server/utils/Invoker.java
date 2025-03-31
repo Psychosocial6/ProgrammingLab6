@@ -1,7 +1,7 @@
 package Server.utils;
 
 import Server.commands.*;
-import extra.exceptions.ExecutionException;
+import Server.exceptions.ExecutionException;
 import Server.managers.CollectionManager;
 
 import java.util.HashMap;

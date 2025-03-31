@@ -13,7 +13,7 @@ public class CommandShow extends  Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandShow(CollectionManager collectionManager) {
-        super(collectionManager, 0);
+        super(collectionManager);
     }
 
     /**

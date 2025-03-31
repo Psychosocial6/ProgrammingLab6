@@ -1,4 +1,4 @@
-package extra.collectionElements;
+package Server.collectionElements;
 
 import java.io.Serializable;
 

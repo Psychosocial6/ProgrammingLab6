@@ -2,12 +2,12 @@ package Server;
 
 import Client.requests.Request;
 import Server.responses.Response;
-import extra.collectionElements.Vehicle;
-import extra.exceptions.ExecutionException;
+import Server.collectionElements.Vehicle;
+import Server.exceptions.ExecutionException;
 import Server.utils.Invoker;
 import Server.utils.RequestDeserializer;
 import Server.utils.ResponseSerializer;
-import extra.utils.IDGenerator;
+import Server.utils.IDGenerator;
 
 import java.io.File;
 import java.io.IOException;

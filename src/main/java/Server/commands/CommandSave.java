@@ -15,7 +15,7 @@ public class CommandSave extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandSave(CollectionManager collectionManager) {
-        super(collectionManager, 1);
+        super(collectionManager);
     }
 
     /**

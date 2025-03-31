@@ -1,14 +1,13 @@
 package Server.utils;
 
-import extra.collectionElements.Coordinates;
-import extra.collectionElements.FuelType;
-import extra.collectionElements.Vehicle;
+import Server.collectionElements.Coordinates;
+import Server.collectionElements.FuelType;
+import Server.collectionElements.Vehicle;
 import Server.commands.Command;
-import extra.exceptions.CommandTokenException;
-import extra.exceptions.ExecutionException;
-import extra.exceptions.ScriptExecutionException;
-import extra.exceptions.WrongDataException;
-import extra.utils.FileWriter;
+import Server.exceptions.CommandTokenException;
+import Server.exceptions.ExecutionException;
+import Server.exceptions.ScriptExecutionException;
+import Server.exceptions.WrongDataException;
 
 import java.io.File;
 import java.io.FileNotFoundException;

@@ -1,6 +1,6 @@
 package Client.utils;
 
-import Server.responses.Response;
+import Client.responses.Response;
 
 import java.io.ByteArrayInputStream;
 import java.io.IOException;

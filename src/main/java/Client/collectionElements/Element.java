@@ -1,6 +1,6 @@
-package extra.collectionElements;
+package Client.collectionElements;
 
-import extra.interfaces.Validatable;
+import Client.interfaces.Validatable;
 
 import java.io.Serializable;
 

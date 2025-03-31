@@ -1,4 +1,4 @@
-package extra.utils;
+package Server.utils;
 
 /**
  * Утилитный класс для генерации значения id

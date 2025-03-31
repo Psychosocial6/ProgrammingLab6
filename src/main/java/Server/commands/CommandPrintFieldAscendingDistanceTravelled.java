@@ -13,7 +13,7 @@ public class CommandPrintFieldAscendingDistanceTravelled extends  Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandPrintFieldAscendingDistanceTravelled(CollectionManager collectionManager) {
-        super(collectionManager, 0);
+        super(collectionManager);
     }
 
        /**

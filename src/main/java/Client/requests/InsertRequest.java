@@ -1,7 +1,5 @@
 package Client.requests;
 
-import extra.collectionElements.Vehicle;
-
 public class InsertRequest extends Request {
     public InsertRequest(Object[] args) {
         super("insert", args, 1, true);

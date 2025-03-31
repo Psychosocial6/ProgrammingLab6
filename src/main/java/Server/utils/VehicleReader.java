@@ -1,9 +1,9 @@
-package extra.utils;
+package Server.utils;
 
-import extra.collectionElements.Coordinates;
-import extra.collectionElements.FuelType;
-import extra.collectionElements.Vehicle;
-import extra.exceptions.WrongDataException;
+import Server.collectionElements.Coordinates;
+import Server.collectionElements.FuelType;
+import Server.collectionElements.Vehicle;
+import Server.exceptions.WrongDataException;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

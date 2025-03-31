@@ -1,6 +1,6 @@
 package Server.commands;
 
-import extra.collectionElements.Vehicle;
+import Server.collectionElements.Vehicle;
 import Server.managers.CollectionManager;
 
 /**
@@ -14,7 +14,7 @@ public class CommandReplaceIfLower extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandReplaceIfLower(CollectionManager collectionManager) {
-        super(collectionManager, 1);
+        super(collectionManager);
         requiresVehicleObject = true;
     }
 

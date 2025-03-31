@@ -1,6 +1,6 @@
 package Server.commands;
 
-import extra.collectionElements.Vehicle;
+import Server.collectionElements.Vehicle;
 import Server.managers.CollectionManager;
 
 /**
@@ -14,7 +14,7 @@ public class CommandInsert extends Command {
      * @param collectionManager - класс управляющий коллекцией
      * */
     public CommandInsert(CollectionManager collectionManager) {
-        super(collectionManager, 1);
+        super(collectionManager);
         requiresVehicleObject = true;
     }
 
